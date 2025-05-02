@@ -87,7 +87,7 @@ h6 {
 */
 
 body {
-  background: hsl(33.3, 60%, 97.1%);
+  background-color: rgba(250, 250, 250, 1);
   font-family: -apple-system, system-ui, BlinkMacSystemFont, Aptos, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: rgb(43, 55, 62);
 }
