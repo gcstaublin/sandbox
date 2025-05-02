@@ -1,5 +1,12 @@
 ---
 import "../styles/global.css";
+import Changelog from "../components/Changelog.astro";
+import Feed from "../components/Feed.astro";
+import Metrics from "../components/Metrics.astro";
+import PinnedProjects from "../components/PinnedProjects.astro";
+import ReleaseCard from "../components/ReleaseCard.astro";
+import SubscriberOverview from "../components/SubscriberOverview.astro";
+import Resizer from "../components/Resizer.astro";
 ---
 
 <html lang="en">
@@ -12,5 +19,39 @@ import "../styles/global.css";
   </head>
   <body>
     <h1>Hello World, this is the sandbox</h1>
+    <section>
+      <Changelog />
+    </section>
+    <section>
+      <Feed />
+    </section>
+    <section>
+      <Metrics />
+    </section>
+    <section>
+      <PinnedProjects />
+    </section>
+    <section>
+      <ReleaseCard />
+    </section>
+    <section>
+      <SubscriberOverview />
+    </section>
+    <section>
+      <Resizer />
+    </section>
   </body>
 </html>
+
+<style>
+  section {
+    padding: 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    inline-size: 90%;
+    margin-inline: auto;
+  }
+  section + section {
+    margin-top: 40px;
+  }
+</style>
