@@ -1,0 +1,208 @@
+---
+import "../styles/global.css";
+---
+
+{/* ================================== */}
+{/* HTML Structure                     */}
+{/* ================================== */}
+<div class="release-card">
+  <div class="release-header">
+    <div class="repo-info">
+      <div class="repo-icon">
+        <div class="icon">H</div>
+      </div>
+      <div class="repo-details">
+        <div class="repo-name">
+          tokens-studio/sd-transforms <span class="release-label">released</span
+          >
+        </div>
+        <div class="release-time">3 weeks ago</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="release-content">
+    <h2 class="version">v1.3.0</h2>
+
+    <div class="changes-section">
+      <h3 class="changes-title">Minor Changes</h3>
+
+      <ul class="changes-list">
+        <li class="change-item">
+          <a href="#" class="commit-link">a8f4c73</a> : - Supporting color modifier
+          value calculations
+          <ul class="sub-changes">
+            <li>
+              Changing the default color precision to the ColorJS default of 5
+            </li>
+            <li>
+              Updating the integration tests to use vitest instead of moch...
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <a href="#" class="read-more">Read more</a>
+  </div>
+
+  <div class="reactions">
+    <button class="reaction-button">
+      <span class="reaction-icon">😊</span>
+    </button>
+  </div>
+</div>
+{/* ================================== */}
+{/* Style                              */}
+{/* ================================== */}
+<style>
+  .release-card {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #d0d7de;
+    overflow: hidden;
+  }
+
+  .release-header {
+    padding: 16px;
+  }
+
+  .repo-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .repo-icon {
+    margin-right: 10px;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .repo-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .repo-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #24292f;
+  }
+
+  .release-label {
+    font-weight: normal;
+    color: #57606a;
+  }
+
+  .release-time {
+    font-size: 12px;
+    color: #57606a;
+  }
+
+  .release-content {
+    padding: 0 16px 16px;
+  }
+
+  .version {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #24292f;
+  }
+
+  .changes-section {
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .changes-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #24292f;
+  }
+
+  .changes-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .change-item {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #24292f;
+  }
+
+  .commit-link {
+    color: #0969da;
+    text-decoration: none;
+  }
+
+  .commit-link:hover {
+    text-decoration: underline;
+  }
+
+  .sub-changes {
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-top: 4px;
+  }
+
+  .sub-changes li {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #24292f;
+  }
+
+  .read-more {
+    display: inline-block;
+    font-size: 14px;
+    color: #0969da;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+
+  .reactions {
+    padding: 8px 16px;
+    border-top: 1px solid #d0d7de;
+  }
+
+  .reaction-button {
+    background: none;
+    border: 1px solid #d0d7de;
+    border-radius: 100px;
+    padding: 4px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reaction-button:hover {
+    background-color: #f6f8fa;
+  }
+
+  .reaction-icon {
+    font-size: 14px;
+  }
+</style>

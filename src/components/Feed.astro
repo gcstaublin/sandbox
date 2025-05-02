@@ -1,0 +1,144 @@
+---
+import "../styles/global.css";
+---
+
+{/* ================================== */}
+{/* HTML Structure                     */}
+{/* ================================== */}
+<div class="activity-feed">
+  <h3 class="feed-title">Posts Activity Feed</h3>
+  <div class="x-timeline">
+    <!-- x-timeline Item 1 -->
+    <div class="x-timeline-item">
+      <div class="x-timeline-icon">👁️</div>
+      <div class="x-timeline-content">
+        <div class="x-timeline-action">
+          Opened <a href="#">test</a>
+        </div>
+        <div class="x-timeline-time">May 6, 2024 - 12:43:37 PM</div>
+      </div>
+    </div>
+
+    <!-- x-timeline Item 2 -->
+    <div class="x-timeline-item">
+      <div class="x-timeline-icon">📨</div>
+      <div class="x-timeline-content">
+        <div class="x-timeline-action">
+          Delivered <a href="#">test</a>
+        </div>
+        <div class="x-timeline-time">May 6, 2024 - 12:43:10 PM</div>
+      </div>
+    </div>
+
+    <!-- Timeline Item 3 -->
+    <div class="x-timeline-item">
+      <div class="x-timeline-icon">▶️</div>
+      <div class="x-timeline-content">
+        <div class="x-timeline-action">
+          Sent <a href="#">test</a>
+        </div>
+        <div class="x-timeline-time">May 6, 2024 - 12:43:09 PM</div>
+      </div>
+    </div>
+
+    <!-- Timeline Item 4 -->
+    <div class="x-timeline-item">
+      <div class="x-timeline-icon">👆</div>
+      <div class="x-timeline-content">
+        <div class="x-timeline-action">
+          Clicked <a href="#">Unlock Savings Galore with Mobbin Weekly Deals!</a
+          >
+        </div>
+        <div class="x-timeline-time">May 5, 2024 - 2:51:34 PM</div>
+      </div>
+      <div class="x-timeline-url">
+        https://johndoe-newsletter-a3f809.beehiiv.com/polls/af020696-45dc-4da3-9429-c9220d0f262e/response?pcid=fd14dcb3-5c05-4ccf-9a31-e2c92a8cb85e&ppid=6aa72d5e-b264-4679-bc83-cf9772bc0d17&sid=6f5689ab-1ccd-48f5-ab03-403eb37a9553&last_read=&source=PostPortal&token=4dd0-bbe3-c5636c89279f
+      </div>
+    </div>
+  </div>
+</div>
+{/* ================================== */}
+{/* Style                              */}
+{/* ================================== */}
+<style is:global>
+  .activity-feed {
+    margin-top: 30px;
+  }
+
+  .feed-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .x-timeline {
+    position: relative;
+  }
+
+  .x-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 25px;
+    width: 2px;
+    background-color: #e0e0e0;
+  }
+
+  .x-timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    min-height: 50px;
+  }
+
+  .x-timeline-icon {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    z-index: 1;
+  }
+
+  .x-timeline-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .x-timeline-action {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .x-timeline-action a {
+    color: #6366f1;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+
+  .x-timeline-time {
+    color: #888;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .x-timeline-url {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+    word-break: break-all;
+    padding: 8px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-left: -10px;
+  }
+</style>

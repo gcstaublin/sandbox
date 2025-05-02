@@ -1,0 +1,100 @@
+---
+import "../styles/global.css";
+---
+
+{/* ================================== */}
+{/* HTML Structure                     */}
+{/* ================================== */}
+
+<div class="subscriber-overview">
+  <h2 class="overview-title">Subscriber Overview</h2>
+  <div class="tabs">
+    <div class="tab active">Posts</div>
+    <div class="tab">Automations</div>
+    <div class="tab">Polls</div>
+    <div class="tab">Referrals</div>
+    <div class="tab">Other Emails</div>
+  </div>
+
+  <!-- Search and Filter -->
+  <div class="search-filter">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+    </div>
+    <select class="filter-dropdown">
+      <option>All Events</option>
+    </select>
+  </div>
+</div>
+
+{/* ================================== */}
+{/* Style                              */}
+{/* ================================== */}
+<style is:global>
+  .subscriber-overview {
+    margin-bottom: 20px;
+  }
+
+  .overview-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+  }
+
+  .tab {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .tab.active {
+    color: #333;
+    border-bottom: 2px solid #333;
+    font-weight: 500;
+  }
+
+  .search-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .search-bar {
+    position: relative;
+    width: 300px;
+  }
+
+  .search-bar input {
+    width: 100%;
+    padding: 8px 12px 8px 35px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .search-bar::before {
+    content: "🔍";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 14px;
+  }
+
+  .filter-dropdown {
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;
+    min-width: 120px;
+  }
+</style>
